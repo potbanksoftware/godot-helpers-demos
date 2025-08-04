@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlx37bo153135"
+path="res://.godot/imported/Upbeat Loop_2.ogg-a742c3332d23a0bac98cf8a85d207606.oggvorbisstr"
+
+[deps]
+
+source_file="res://Upbeat short Music Loop Vorbis oog/Upbeat Loop_2.ogg"
+dest_files=["res://.godot/imported/Upbeat Loop_2.ogg-a742c3332d23a0bac98cf8a85d207606.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
