@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GodotHelpersUtils="*res://addons/godot-helpers/utils.gd"
 Controller="*res://addons/godot-helpers/controller/controller.gd"
+AmbientMusicPlayer="*res://addons/godot-helpers/ambient_music_player.gd"
 
 [editor_plugins]
 

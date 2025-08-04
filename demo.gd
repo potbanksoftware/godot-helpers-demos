@@ -1,11 +1,13 @@
 extends Node2D
 
+const UPBEAT_LOOP = preload("res://Upbeat short Music Loop Vorbis oog/Upbeat Loop_2.ogg")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$AudioStreamPlayer.stream_paused = true
+	AmbientMusicPlayer.change_track(UPBEAT_LOOP)
+	AmbientMusicPlayer.stream_paused = true
 	%CheckBoxButton.focus()
 
 
 func _on_check_box_button_toggled(toggled_on: bool) -> void:
-	$AudioStreamPlayer.stream_paused = !toggled_on
+	AmbientMusicPlayer.stream_paused = !toggled_on

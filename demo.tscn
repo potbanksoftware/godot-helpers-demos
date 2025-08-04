@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://ch0ng0ge6ukkm"]
+[gd_scene load_steps=9 format=3 uid="uid://ch0ng0ge6ukkm"]
 
 [ext_resource type="PackedScene" uid="uid://cpywutoqduxft" path="res://addons/godot-helpers/controls/checkbox_button/checkbox_button.tscn" id="1_l8t7v"]
 [ext_resource type="Script" path="res://demo.gd" id="1_yjav4"]
 [ext_resource type="PackedScene" uid="uid://cystngw0cbebx" path="res://addons/godot-helpers/controls/volume_slider/volume_slider.tscn" id="2_fs70g"]
 [ext_resource type="Texture2D" uid="uid://dc6xv0il6lgea" path="res://Mountain at Dusk Background/parallax_mountain_pack/layers/parallax-mountain-bg.png" id="2_or04l"]
-[ext_resource type="AudioStream" uid="uid://dlx37bo153135" path="res://Upbeat short Music Loop Vorbis oog/Upbeat Loop_2.ogg" id="3_2y1fq"]
 [ext_resource type="PackedScene" uid="uid://dpovqrlf3updt" path="res://addons/godot-helpers/blur/blur_colour_rect.tscn" id="3_daoaa"]
 [ext_resource type="PackedScene" uid="uid://ji1sg06cilyc" path="res://addons/godot-helpers/controls/controller_prompt_button.tscn" id="6_tykqu"]
 [ext_resource type="PackedScene" uid="uid://crwk6sd5rygqh" path="res://addons/godot-helpers/controls/controller_prompt_label.tscn" id="7_usgwm"]
@@ -74,10 +73,5 @@ layout_mode = 2
 horizontal_alignment = 2
 group = 1
 prompt_text = "Use Equipment"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_2y1fq")
-autoplay = true
-parameters/looping = true
 
 [connection signal="toggled" from="CanvasLayer/VBoxContainer/CheckBoxButton" to="." method="_on_check_box_button_toggled"]
