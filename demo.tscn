@@ -59,21 +59,25 @@ action = "shoot"
 
 [node name="ControllerPromptLabel" parent="CanvasLayer/VBoxContainer" instance=ExtResource("7_usgwm")]
 layout_mode = 2
+text = "␺ Jump "
 prompt_text = "Jump"
 action = "jump"
 
 [node name="ControllerGroupPromptLabel" parent="CanvasLayer/VBoxContainer" instance=ExtResource("8_fau0f")]
 layout_mode = 2
+text = "␣ Move "
 prompt_text = "Move"
 
 [node name="ControllerGroupPromptLabel2" parent="CanvasLayer/VBoxContainer" instance=ExtResource("8_fau0f")]
 layout_mode = 2
+text = "␾ Aim "
 horizontal_alignment = 1
 group = 2
 prompt_text = "Aim"
 
 [node name="ControllerGroupPromptLabel3" parent="CanvasLayer/VBoxContainer" instance=ExtResource("8_fau0f")]
 layout_mode = 2
+text = "␤ Use Equipment "
 horizontal_alignment = 2
 group = 1
 prompt_text = "Use Equipment"
