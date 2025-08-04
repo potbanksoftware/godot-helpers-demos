@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch0ng0ge6ukkm"]
+[gd_scene load_steps=11 format=3 uid="uid://ch0ng0ge6ukkm"]
 
 [ext_resource type="PackedScene" uid="uid://cpywutoqduxft" path="res://addons/godot-helpers/controls/checkbox_button/checkbox_button.tscn" id="1_l8t7v"]
 [ext_resource type="Script" path="res://demo.gd" id="1_yjav4"]
@@ -8,6 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://ji1sg06cilyc" path="res://addons/godot-helpers/controls/controller_prompt_button.tscn" id="6_tykqu"]
 [ext_resource type="PackedScene" uid="uid://crwk6sd5rygqh" path="res://addons/godot-helpers/controls/controller_prompt_label.tscn" id="7_usgwm"]
 [ext_resource type="PackedScene" uid="uid://bp1ycwevll0oo" path="res://addons/godot-helpers/controls/controller_group_prompt_label.tscn" id="8_fau0f"]
+[ext_resource type="Script" path="res://addons/godot-helpers/bbcode_offset.gd" id="9_b0vr6"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_y3siu"]
+script = ExtResource("9_b0vr6")
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_yjav4")
@@ -73,5 +77,14 @@ layout_mode = 2
 horizontal_alignment = 2
 group = 1
 prompt_text = "Use Equipment"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+bbcode_enabled = true
+text = "This [offset y=-7]text[/offset] makes [offset y=15]use[/offset] of [offset y=-3]RichTextOffset[/offset]"
+fit_content = true
+scroll_active = false
+custom_effects = [SubResource("RichTextEffect_y3siu")]
 
 [connection signal="toggled" from="CanvasLayer/VBoxContainer/CheckBoxButton" to="." method="_on_check_box_button_toggled"]
